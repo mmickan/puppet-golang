@@ -1,4 +1,4 @@
-GOROOT="<%= @workdir %>go"
-GOPATH="<%= @workdir %>"
-PATH="<%= @goroot %>"
+GOROOT="<%= scope['golang::workdir'] %>go"
+GOPATH="<%= scope['golang::workdir'] %>"
+PATH="<%= scope['golang::goroot'] %>"
 export GOPATH PATH GOROOT
